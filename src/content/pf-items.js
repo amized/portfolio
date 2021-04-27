@@ -8,8 +8,8 @@ import fandanglesThumb from "../images/fandangles-thumb.jpg"
 import fandanglesMockup from "../images/fangkles-screenshot.jpg"
 import hwwoThumb from "../images/hwwa-thumb2.jpg"
 import hwwaMockup from "../images/hwwa-mockup.jpg"
-import wilsonThumb from "../images/wilson-thumb1.jpg"
-import wilsonMockup from "../images/wilson-screen.jpg"
+//import wilsonThumb from "../images/wilson-thumb1.jpg"
+//import wilsonMockup from "../images/wilson-screen.jpg"
 //import moroThumb from "../images/moro-thumb.jpg"
 //import moroMockup from "../images/moro-mockup.jpg"
 import scenicThumb from "../images/scenic-thumb.jpg"
@@ -23,7 +23,7 @@ export default [
   {
     title: "Showed",
     description:
-      "Virtual event streaming and ticketing platform. I built this platform from the ground up.",
+      "Virtual event streaming and ticketing platform to help venues and performers monetize their online performances.",
     thumbnail: showedThumb,
     screenshot: showedMockup,
     link: "https://showed.tv",
@@ -39,7 +39,7 @@ export default [
   {
     title: "My Parsley Health",
     description:
-      "Patient portal for Parsley Health. I led the effort to built out the application from the ground up.",
+      "Patient portal for Parsley Health members, allowing them schedule visits, messaging doctors, see lab results and view their health plans.",
     thumbnail: parsleyThumb,
     screenshot: parsleyMockup,
     link: "https://my.parsleyhealth.com",
@@ -136,6 +136,7 @@ export default [
       { name: "Parallax" },
     ],
   },
+  /*
   {
     title: "Wilson Storage Website",
     description:
@@ -150,4 +151,20 @@ export default [
       { name: "Embedded e-commerce" },
     ],
   },
+    {
+    title: "Moro Olive Oil",
+    description:
+      "Moro is a popular Australian brand that produces olive oils and vinegars. Their responsive site shows off the products and intelligently connects products to a diverse recipe library. ",
+    thumbnail: null, //moroThumb,
+    screenshot: null, //moroMockup,
+    link: "http://www.worldofmoro.com.au/",
+    technologies: [
+      { name: "Angular JS" },
+      { name: "JQuery" },
+      { name: "Sass" },
+      { name: "Wordpress" },
+      { name: "MVC with Timber" },
+    ],
+  },
+  */
 ]

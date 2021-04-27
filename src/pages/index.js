@@ -49,23 +49,27 @@ const IndexPage = () => {
   return (
     <>
       <Helmet />
-      <div className="loader">
-        <div className="loader-mask"></div>
-        <div className="intro-curtain-l">
-          <IntroCurtainL />
+
+      {/*
+        <div>
+        <div className="loader">
+          <div className="loader-mask"></div>
+          <div className="intro-curtain-l">
+            <IntroCurtainL />
+          </div>
+          <div className="intro-curtain-r">
+            <IntroCurtainR />
+          </div>
+          <div className="loading-text">
+            <span className="loading-text__l">
+              <span className="loading-text__l-i">Load</span>
+            </span>
+            <span className="loading-text__r">
+              <span className="loading-text__r-i">ing...</span>
+            </span>
+          </div>
         </div>
-        <div className="intro-curtain-r">
-          <IntroCurtainR />
-        </div>
-        <div className="loading-text">
-          <span className="loading-text__l">
-            <span className="loading-text__l-i">Load</span>
-          </span>
-          <span className="loading-text__r">
-            <span className="loading-text__r-i">ing...</span>
-          </span>
-        </div>
-      </div>
+        </div>*/}
 
       <div className="main">
         <Waypoint
@@ -83,7 +87,7 @@ const IndexPage = () => {
               <div className="intro-title">
                 <h1>
                   <div>Amiel Zwier</div>
-                  <div>Senior full stack developer</div>
+                  <div>Senior Full Stack Developer</div>
                 </h1>
               </div>
               <Nav items={navItems} navIndex={navIndex} navHeight={navHeight} />
@@ -102,17 +106,13 @@ const IndexPage = () => {
                   <div className="about__text">
                     <p>
                       I’ve been working in application development for 12 years
-                      and I’m passionate about beautiful user experiences. The
-                      smallest details on a website or app add up to making a
-                      big impact.
-                    </p>
-                    <p>
-                      My experience includes web development with profficiency
-                      in Typescript, React, Redux and Next JS. I have also
-                      worked with numerous backend technologies to build out
-                      fully functional services through both REST and GraphQL.
-                      Backend languages include python, django, PHP and Node JS
-                      and other frameworks.
+                      through freelance contracting, agency work and company
+                      employment, some of which include NBCUniversal and Parsley
+                      Health. I’m passionate about building beautiful digital
+                      experiences, and the end user is always front of mind in
+                      any project I take on. My broad range of skills includes
+                      front end development, backend / api development, system
+                      architecture, UX design and project management.
                     </p>
                     <a
                       className="download-button"
@@ -150,14 +150,19 @@ const IndexPage = () => {
                 <div className="skills__main">
                   <div className="skills__grid">
                     <SkillsItem
+                      title="Modern Web"
+                      description="Typescript, React JS, Next JS, Redux, Apollo / GraphQL"
+                      iconClass="icon-html"
+                    />
+                    <SkillsItem
+                      title="Fullstack tech"
+                      description="PHP, Node Express, Django, Python, PostgreSQL, Mongo DB"
+                      iconClass="icon-backend"
+                    />
+                    <SkillsItem
                       title="Advanced interactions"
                       description="Progressive app design, retina, WAI-ARIA, SVG animation, parallax, video"
                       iconClass="icon-css"
-                    />
-                    <SkillsItem
-                      title="Modern web frameworks"
-                      description="Typescript, React JS, Redux, Apollo / GraphQL, Socket IO, Gatsby, Jekyll"
-                      iconClass="icon-html"
                     />
                     <SkillsItem
                       title="Dev tools"
@@ -173,11 +178,6 @@ const IndexPage = () => {
                       title="CMS Integration"
                       description="Wordpress, Contentful, Sanity, Umbraco"
                       iconClass="icon-cms"
-                    />
-                    <SkillsItem
-                      title="Fullstack tech"
-                      description="PHP, Node Express, Django, Python, PostgreSQL, Mongo DB"
-                      iconClass="icon-backend"
                     />
                   </div>
                 </div>
@@ -196,7 +196,7 @@ const IndexPage = () => {
                     title="Parsley Health"
                     period="May 2017 - April 2021"
                     schedule="Full time"
-                    role="Senior Developer"
+                    role="Tech Lead / Solutions Architect"
                     description="Lead applications developer and architect for Parsley Health’s member web services, including their patient portal, sign up flow and provider administration tools."
                   />
 
